@@ -1,0 +1,14 @@
+grade = data['Grade']
+grade = pd.value_counts(np.array(grade))
+print(grade)
+labels = ["Low - BAD", "Medium - OK", "High - PERFECT"]
+plt.pie(grade)
+plt.legend(labels,title = "Grade of Food")
+
+
+
+plt.show()
+plt.boxplot(data["Odor"])
+plt.show()
+sb.catplot(data=data)
+plt.show()
